@@ -1,3 +1,4 @@
+import {VisitT} from "./VisitT";
 export interface ClientT {
   name: string;
   phone: string;
@@ -5,4 +6,5 @@ export interface ClientT {
   adress: string;
   gender: string;
   age: number;
+  visits : VisitT[];
 }

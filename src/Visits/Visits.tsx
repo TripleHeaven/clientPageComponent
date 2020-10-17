@@ -1,6 +1,55 @@
 import React from "react";
-import styles from "./BasicInformation.css";
-import { ClientT } from "../TypesTS/ClientT";
-export default function Visits() {
-  return <div className={styles.container}>{/* Verstka */}</div>;
+import styles from "./Visits.css";
+import { VisitT } from "../TypesTS/VisitT";
+
+export default function Visits({ visits }: { visits: VisitT[] }) {
+  return (
+    <div className={styles.container}>
+      <div className={styles.title}>
+        <p className={styles.mainTitle}>Visits</p>
+        <div className={styles.threeDots}>
+          <div className={styles.tdContainer}>
+            <div className={styles.dot}></div>
+            <div className={styles.dot}></div>
+            <div className={styles.dot}></div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.clientInfo}>
+        <div className={styles.infoLevel}>
+          <div className={styles.infoLeft}>
+            <div className={styles.categoryName}>
+              <text>Last Visit</text>
+            </div>
+            <div className={styles.param}>n/a</div>
+          </div>
+          <div className={styles.infoRight}>
+            <div className={styles.categoryName}>
+              <text>Total visits</text>
+            </div>
+            <div className={styles.param}>153</div>
+          </div>
+        </div>
+        <div className={styles.space}></div>
+        <div className={styles.infoLevel}>
+          <div className={styles.infoLeft}>
+            <div className={styles.categoryName}>
+              <text>First visit </text>
+            </div>
+            <div className={styles.param}>n/a</div>
+          </div>
+          <div className={styles.infoRight}>
+            <div className={styles.categoryName}>
+              <text>Client since</text>
+            </div>
+            <div className={styles.param}>15 Sep 2018</div>
+          </div>
+        </div>
+
+        <div className={styles.infoLevel}>
+          <p className={styles.showButton}>Show all visits</p>
+        </div>
+      </div>
+    </div>
+  );
 }

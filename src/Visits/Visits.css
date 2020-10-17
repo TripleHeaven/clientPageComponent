@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+}
+.container {
+  width: 530px;
+  height: 136px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  height: 50px;
+  font-weight: 500;
+}
+.mainTitle {
+  display: inline-block;
+  padding-left: 22px;
+  padding-top: 3px;
+}
+.threeDots {
+  display: inline-block;
+  width: 15px;
+  padding-left: 431px;
+}
+.tdContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.infoLevel {
+  display: flex;
+  justify-content: space-between;
+}
+.clientInfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.infoLeft {
+  padding-left: 12px;
+}
+.infoRight {
+  padding-right: 21px;
+}
+.categoryName {
+  display: inline-block;
+  width: 110px;
+  font-weight: 500;
+}
+.categoryName text {
+  padding-left: 10px;
+}
+.param {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  width: 120px;
+}
+.space {
+  height: 10px;
+}
+.showButton {
+  padding-left: 22px;
+  padding-top: 4px;
+  color: #0047ff;
+}
