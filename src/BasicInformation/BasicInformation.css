@@ -50,7 +50,7 @@
   width: 99px;
   font-weight: 500;
 }
-.categoryName text {
+.categoryName p {
   padding-left: 10px;
 }
 .param {
@@ -61,4 +61,7 @@
 }
 .space {
   height: 10px;
+}
+.categoryName p {
+  display: inline;
 }

@@ -19,13 +19,13 @@ export default function Visits({ visits }: { visits: VisitT[] }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <text>Last Visit</text>
+              <p>Last Visit</p>
             </div>
             <div className={styles.param}>n/a</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <text>Total visits</text>
+              <p>Total visits</p>
             </div>
             <div className={styles.param}>153</div>
           </div>
@@ -34,13 +34,13 @@ export default function Visits({ visits }: { visits: VisitT[] }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <text>First visit </text>
+              <p>First visit </p>
             </div>
             <div className={styles.param}>n/a</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <text>Client since</text>
+              <p>Client since</p>
             </div>
             <div className={styles.param}>15 Sep 2018</div>
           </div>

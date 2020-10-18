@@ -18,13 +18,13 @@ export default function Abo({ abo }: { abo: AboT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <text>Active abo</text>
+              <p>Active abo</p>
             </div>
             <div className={styles.param}>{abo.active}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <text>Registred</text>
+              <p>Registred</p>
             </div>
             <div className={styles.param}>{abo.registred}</div>
           </div>
@@ -33,13 +33,13 @@ export default function Abo({ abo }: { abo: AboT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <text>Status</text>
+              <p>Status</p>
             </div>
             <div className={styles.param}>{abo.status}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <text>Active from</text>
+              <p>Active from</p>
             </div>
             <div className={styles.param}>{abo.activeFrom}</div>
           </div>
@@ -48,13 +48,13 @@ export default function Abo({ abo }: { abo: AboT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <text>Visits left</text>
+              <p>Visits left</p>
             </div>
             <div className={styles.param}>{abo.visitsLeft}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <text>Active till</text>
+              <p>Active till</p>
             </div>
             <div className={styles.param}>{abo.activeTill}</div>
           </div>

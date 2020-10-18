@@ -68,3 +68,6 @@
   padding-top: 4px;
   color: #0047ff;
 }
+.categoryName p {
+  display: inline;
+}

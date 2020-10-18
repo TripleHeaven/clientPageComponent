@@ -30,14 +30,14 @@ export default function BasicInformation({ client }: { client: ClientT }) {
                 color="#0047FF"
                 flip="horizontal"
               />
-              <text>Phone</text>
+              <p>Phone</p>
             </div>
             <div className={styles.param}>{client.phone}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
               <FontAwesomeIcon icon={faVenusMars} color="#0047FF" />
-              <text>Gender</text>
+              <p>Gender</p>
             </div>
             <div className={styles.param}>{client.gender}</div>
           </div>
@@ -47,14 +47,14 @@ export default function BasicInformation({ client }: { client: ClientT }) {
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
               <FontAwesomeIcon icon={faAt} color="#0047FF"></FontAwesomeIcon>
-              <text>Email</text>
+              <p>Email</p>
             </div>
             <div className={styles.param}>{client.email}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
               <FontAwesomeIcon icon={faCalendar} color="#0047FF" />
-              <text>Age</text>
+              <p>Age</p>
             </div>
             <div className={styles.param}>{client.age}</div>
           </div>
@@ -68,7 +68,7 @@ export default function BasicInformation({ client }: { client: ClientT }) {
                 color="#0047FF"
                 flip="horizontal"
               />
-              <text>Adress</text>
+              <p>Adress</p>
             </div>
             <div className={styles.param}>{client.adress}</div>
           </div>

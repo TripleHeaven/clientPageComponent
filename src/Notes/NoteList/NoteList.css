@@ -95,49 +95,67 @@
 .noteItself {
   display: block;
 }
-.noteText {
+
+.limenuClose {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+.limenuOpen {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+.noteEdit {
   display: flex;
   padding-left: 21px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
-.noteText p {
+
+.noteTextOpen {
+  display: flex;
+  padding-left: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.noteTextOpen p {
   line-height: 16px;
   margin: 0;
   padding-top: 5px;
   flex-basis: 90%;
 }
-.noteText .threeDots {
+.noteTextOpen .threeDots {
   padding-left: 8px;
   padding-top: 15px;
 }
-.notesContainer {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 150px;
+.noteTextOpen {
+  z-index: -1;
 }
-.tbForCreate {
+.noteTextClosed {
+  display: none;
+}
+.noteEditClosed {
+  display: none;
+}
+.noteEditOpen {
+  display: block;
+  padding-left: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.noteEditOpen textarea {
   width: 470px;
   height: 100px;
-  display: none;
 }
-.createContainerOpen {
-  padding-left: 22px;
-  display: block;
+li {
+  width: 50px;
+  z-index: 100;
 }
-.createContainerOpen .buttonSection {
-  display: block;
-}
-.createContainerOpen .tbForCreate {
-  display: block;
-}
-.createContainerClosed {
-  padding-left: 22px;
-  display: none;
-}
-.buttonSection {
+.buttonsE {
   float: right;
-  padding-right: 16px;
-  display: none;
+  padding-right: 19px;
 }
