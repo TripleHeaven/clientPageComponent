@@ -1,5 +1,5 @@
-import {VisitT} from "./VisitT";
-import {NoteT} from "./NoteT";
+import { VisitT } from './VisitT';
+import { NoteT } from './NoteT';
 export interface ClientT {
   name: string;
   phone: string;
@@ -7,6 +7,6 @@ export interface ClientT {
   adress: string;
   gender: string;
   age: number;
-  visits : VisitT[];
-  notes : NoteT[];
+  visits: VisitT[];
+  notes: NoteT[];
 }

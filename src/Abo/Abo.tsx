@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Abo.css";
-import { AboT } from "../TypesTS/AboT";
+import React from 'react';
+import styles from './Abo.css';
+import { AboT } from '../TypesTS/AboT';
 export default function Abo({ abo }: { abo: AboT }) {
   return (
     <div className={styles.container}>

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+}
+.container {
+  position: absolute;
+  left: 575px;
+  top: 362px;
+  width: 708px;
+  height: 253px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  height: 46px;
+}
+.mainTitle {
+  display: inline-block;
+  padding-left: 22px;
+  padding-top: 3px;
+}
+.threeDots {
+  display: inline-block;
+  width: 15px;
+  padding-left: 597px;
+}
+.panelContainer {
+  display: flex;
+  justify-content: start;
+  width: 400px;
+  font-size: 13px;
+  padding-top: 2px;
+  padding-left: 28px;
+  transition: 4s;
+  flex-wrap: wrap;
+  height: 20px;
+}
+
+/* .panelContainer :nth-child(2):hover ~ .line .curLine {
+  width: 1000px;
+} */
+
+.panelEl1 {
+  display: flex;
+  width: 50px;
+  height: 30px;
+  flex-wrap: wrap;
+}
+.panelEl1 .curLine {
+  width: 100px;
+  background-color: #001aff;
+  height: 1px;
+  transition: 1s;
+  display: none;
+}
+.panelEl1:hover .curLine {
+  display: block;
+}
+.panelEl2 {
+  display: flex;
+  width: 80px;
+  height: 30px;
+  flex-wrap: wrap;
+}
+.panelEl2 .curLine {
+  width: 80px;
+  background-color: #001aff;
+  height: 1px;
+  display: none;
+}
+.panelEl2:hover .curLine {
+  display: block;
+}
+.panelEl3 {
+  display: flex;
+  width: 70px;
+  height: 30px;
+  flex-wrap: wrap;
+}
+.panelEl3 .curLine {
+  width: 70px;
+  display: none;
+  background-color: #001aff;
+  height: 1px;
+}
+.panelEl3:hover .curLine {
+  display: block;
+}
+.panelEl4 {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  flex-wrap: wrap;
+}
+.panelEl4 .curLine {
+  width: 70px;
+  background-color: #001aff;
+  height: 1px;
+  display: none;
+}
+.panelEl4:hover .curLine {
+  display: block;
+}
+.line {
+  width: 660px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+  margin-left: 22px;
+  margin-top: 8.5px;
+  transition: 1s;
+}
+
+.tdContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.infoLevel {
+  display: flex;
+  justify-content: space-between;
+}
+.clientInfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.infoLeft {
+  padding-left: 22px;
+}
+.infoRight {
+  padding-right: 24px;
+}
+.categoryName {
+  display: inline-block;
+  width: 99px;
+  font-weight: 500;
+}
+.categoryName p {
+  padding-left: 10px;
+}
+.param {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  width: 120px;
+}
+.space {
+  height: 10px;
+}
+.categoryName p {
+  display: inline;
+}
+.titleOfThings {
+  display: flex;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-top: 23px;
+  margin-left: 33px;
+}
+.titleOfThing1 {
+  width: 80px;
+}
+.titleOfThing2 {
+  width: 128px;
+}
+.titleOfThing3 {
+  width: 310px;
+}
+.activityContainer {
+  display: flex;
+  width: 660px;
+  flex-wrap: wrap;
+}
+.activity {
+  display: flex;
+  width: 659px;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-size: 13.5px;
+  margin-left: 28px;
+  margin-top: 8px;
+}
+.type {
+  width: 86px;
+}
+.date {
+  width: 127px;
+}
+.desc {
+  width: 240px;
+}
+.agent {
+  width: 180px;
+  text-align: end;
+  margin-right: 5px;
+}

@@ -1,3 +1,3 @@
-import CreateCalendar from "./CreateCalendar";
+import CreateCalendar from './CreateCalendar';
 
 export default CreateCalendar;

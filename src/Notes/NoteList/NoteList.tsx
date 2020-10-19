@@ -1,23 +1,23 @@
-import React, { useContext, useState } from "react";
-import styles from "./NoteList.css";
-import { Context } from "../../context";
-import { NoteT } from "../../TypesTS/NoteT";
+import React, { useContext, useState } from 'react';
+import styles from './NoteList.css';
+import { Context } from '../../context';
+import { NoteT } from '../../TypesTS/NoteT';
 
 export default function NoteList(note: NoteT) {
   const [isvisible, setVisible] = useState({
     visible: false,
-    menu: styles.limenuClose,
+    menu: styles.limenuClose
   });
   const toggleVisibility = () => {
     setVisible({
       visible: !isvisible.visible,
-      menu: isvisible.visible ? styles.limenuClose : styles.limenuOpen,
+      menu: isvisible.visible ? styles.limenuClose : styles.limenuOpen
     });
   };
   const [isvisibleNote, setVisibleNote] = useState({
     visible: false,
     noteDoneStyle: styles.noteTextOpen,
-    noteEditStyle: styles.noteEditClosed,
+    noteEditStyle: styles.noteEditClosed
   });
   const toggleVisibilityNote = () => {
     setVisibleNote({
@@ -27,7 +27,7 @@ export default function NoteList(note: NoteT) {
         : styles.noteTextClosed,
       noteEditStyle: isvisibleNote.visible
         ? styles.noteEditClosed
-        : styles.noteEditOpen,
+        : styles.noteEditOpen
     });
   };
   // const [noteText, setNoteText] = useState({
@@ -39,25 +39,25 @@ export default function NoteList(note: NoteT) {
 
   function getDateFromDate(date: Date) {
     const numToMonth: { [key: number]: string } = {
-      1: "Jan",
-      2: "Feb",
-      3: "Mar",
-      4: "Apr",
-      5: "May",
-      6: "Jun",
-      7: "Jul",
-      8: "Aug",
-      9: "Sep",
-      10: "Oct",
-      11: "Nov",
-      12: "Dec",
+      1: 'Jan',
+      2: 'Feb',
+      3: 'Mar',
+      4: 'Apr',
+      5: 'May',
+      6: 'Jun',
+      7: 'Jul',
+      8: 'Aug',
+      9: 'Sep',
+      10: 'Oct',
+      11: 'Nov',
+      12: 'Dec'
     };
-    let returnString = "";
+    let returnString = '';
     returnString +=
       date.getDate().toString() +
-      " " +
+      ' ' +
       numToMonth[date.getMonth()] +
-      " " +
+      ' ' +
       date.getFullYear().toString();
     return returnString;
   }
@@ -86,7 +86,7 @@ export default function NoteList(note: NoteT) {
       <div className={isvisibleNote.noteEditStyle}>
         <textarea
           value={savedText}
-          onChange={(event) => setNewText(event.target.value)}
+          onChange={event => setNewText(event.target.value)}
         ></textarea>
         <div className={styles.buttonsE}>
           <button

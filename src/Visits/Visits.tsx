@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Visits.css";
-import { VisitT } from "../TypesTS/VisitT";
+import React from 'react';
+import styles from './Visits.css';
+import { VisitT } from '../TypesTS/VisitT';
 
 export default function Visits({ visits }: { visits: VisitT[] }) {
   return (

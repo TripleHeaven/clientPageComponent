@@ -15,6 +15,9 @@
   color: #0047ff;
 }
 .container {
+  position: absolute;
+  top: 599px;
+  left: 33px;
   width: 530px;
   height: 224px;
   border-radius: 8px;
@@ -71,9 +74,6 @@
 }
 .space {
   height: 10px;
-}
-
-.notesContainer {
 }
 .noteInfo {
   width: 100%;

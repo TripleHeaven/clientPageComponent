@@ -1,17 +1,18 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
-import { register } from "./serviceWorker";
-import BasicInformation from "./BasicInformation/BasicInformation";
-import Visits from "./Visits/Visits";
-import styles from "./index.css";
-import Abo from "./Abo/Abo";
-import Notes from "./Notes/Notes";
-import { ClientT } from "./TypesTS/ClientT";
-import { VisitT } from "./TypesTS/VisitT";
-import { AboT } from "./TypesTS/AboT";
-import { NoteT } from "./TypesTS/NoteT";
-import { Context } from "./context";
-import VisitsCalendar from "./VisitsCalendar/VisitsCalendar";
+import React, { useState } from 'react';
+import { render } from 'react-dom';
+import { register } from './serviceWorker';
+import BasicInformation from './BasicInformation/BasicInformation';
+import Visits from './Visits/Visits';
+import styles from './index.css';
+import Abo from './Abo/Abo';
+import Notes from './Notes/Notes';
+import { ClientT } from './TypesTS/ClientT';
+import { VisitT } from './TypesTS/VisitT';
+import { AboT } from './TypesTS/AboT';
+import { NoteT } from './TypesTS/NoteT';
+import { Context } from './context';
+import VisitsCalendar from './VisitsCalendar/VisitsCalendar';
+import Activity from './Activity/Activity';
 // here we disable console and performance for better production experience
 // console.log(process.env.NODE_ENV);
 // if (!process || !process.env || process.env.NODE_ENV !== "development") {
@@ -23,7 +24,7 @@ import VisitsCalendar from "./VisitsCalendar/VisitsCalendar";
 export default function App() {
   const removeNote = (noteId: number) =>
     setNotes(
-      testNotes.filter((note) => {
+      testNotes.filter(note => {
         return note.noteId !== noteId;
       })
     );
@@ -35,25 +36,25 @@ export default function App() {
   const [testNotes, setNotes] = useState<NoteT[]>([
     {
       noteId: Date.now(),
-      redactor: "Strffan Janoski",
+      redactor: 'Strffan Janoski',
       date: new Date(2020, 3, 15, 2, 3),
       noteText:
-        "fkjaskldfjldskfjlksdfjlasdkfjdl fdsjakfjdlsakfjlfjaslkdjflk;sdaj lkjfdaslkfjdslak;fjdsalkfjksdlk;a lkdasfjl;dksafjld;ksa jldkfasjfl;kdsajfl;kdsajfl;ksd",
+        'fkjaskldfjldskfjlksdfjlasdkfjdl fdsjakfjdlsakfjlfjaslkdjflk;sdaj lkjfdaslkfjdslak;fjdsalkfjksdlk;a lkdasfjl;dksafjld;ksa jldkfasjfl;kdsajfl;kdsajfl;ksd'
     },
     {
       noteId: Date.now() + 15,
-      redactor: "Lev Balaguroff",
+      redactor: 'Lev Balaguroff',
       date: new Date(2019, 3, 15, 2, 3),
       noteText:
-        "fkjaskldffjafkdjsflkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk",
+        'fkjaskldffjafkdjsflkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk'
     },
     {
       noteId: Date.now() + 16,
-      redactor: "Lev Buroff",
+      redactor: 'Lev Buroff',
       date: new Date(2019, 5, 15, 2, 3),
       noteText:
-        "fkjaskldffjafkdjsflfksajflkdj sl;fsadjfklsdfj l;kdjasfl;kdjflfkdsafjd;laskfjd;lsk j;ldasfkkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk",
-    },
+        'fkjaskldffjafkdjsflfksajflkdj sl;fsadjfklsdfj l;kdjasfl;kdjflfkdsafjd;laskfjd;lsk j;ldasfkkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk'
+    }
   ]);
 
   const changeNote = (noteId: number, text: string) => {
@@ -64,10 +65,10 @@ export default function App() {
         newNote.date = new Date(Date.now());
         newNote.noteText = text;
         setNotes([
-          ...testNotes.filter((item) => {
+          ...testNotes.filter(item => {
             return item.noteId !== noteId;
           }),
-          newNote,
+          newNote
         ]);
         sortByDate();
         return null;
@@ -81,57 +82,62 @@ export default function App() {
       ...testNotes,
       {
         noteId: Date.now() + 1,
-        redactor: "Client",
+        redactor: 'Client',
         date: new Date(Date.now()),
-        noteText: text,
-      },
+        noteText: text
+      }
     ]);
     sortByDate();
   };
 
   const testClient: ClientT = {
-    name: "Maria Johnson",
-    phone: "+49 176 256 32321",
-    email: "info@info.com",
-    adress: "Paginton Street",
-    gender: "Male",
+    name: 'Maria Johnson',
+    phone: '+49 176 256 32321',
+    email: 'info@info.com',
+    adress: 'Paginton Street',
+    gender: 'Male',
     age: 31,
     visits: [],
-    notes: testNotes,
+    notes: testNotes
   };
   const testVisits: VisitT[] = [
     {
-      date: new Date(2020, 0, 4),
+      date: new Date(2020, 0, 4)
     },
-    { date: new Date(2020, 0, 7) },
+    { date: new Date(2020, 0, 7) }
   ];
   const testAbo: AboT = {
-    active: "DayTime",
-    status: "Expired on 20 Oct",
-    visitsLeft: "23",
-    registred: "17 Aug 2020",
-    activeFrom: "17 Aug 2020",
-    activeTill: "23 Oct 2020",
+    active: 'DayTime',
+    status: 'Expired on 20 Oct',
+    visitsLeft: '23',
+    registred: '17 Aug 2020',
+    activeFrom: '17 Aug 2020',
+    activeTill: '23 Oct 2020'
   };
   return (
     <Context.Provider
       value={{
         removeNote,
         addNote,
-        changeNote,
+        changeNote
       }}
     >
       <div className={styles.container}>
+        <div className={styles.titlePos}>
+          <div className={styles.clientCircle}></div>
+          <div className={styles.clientName}>Maria Johnson</div>
+        </div>
         <BasicInformation client={testClient}></BasicInformation>
         <Visits visits={testVisits}></Visits>
         <Abo abo={testAbo}></Abo>
         <Notes notes={testNotes}></Notes>
         <VisitsCalendar visits={testVisits}></VisitsCalendar>
+        <Activity></Activity>
       </div>
     </Context.Provider>
   );
 }
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
 
 register();

@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./VisitsCalendar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { VisitT } from "../TypesTS/VisitT";
-import CreateCalendar from "./CreateCalendar";
-import { useState } from "react";
+import React from 'react';
+import styles from './VisitsCalendar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { VisitT } from '../TypesTS/VisitT';
+import CreateCalendar from './CreateCalendar';
+import { useState } from 'react';
 
 export default function VisitsCalendar({ visits }: { visits: VisitT[] }) {
   const [months, setMonth] = useState(0);

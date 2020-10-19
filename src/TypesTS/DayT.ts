@@ -1,4 +1,4 @@
 export interface DayT {
- dayNum : string,
- stateThing : string
+  dayNum: string;
+  stateThing: string;
 }

@@ -1,3 +1,3 @@
-import VisitsCalendar from "./VisitsCalendar";
+import VisitsCalendar from './VisitsCalendar';
 
 export default VisitsCalendar;

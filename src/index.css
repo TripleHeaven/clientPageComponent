@@ -3,5 +3,33 @@ body {
   margin: 0;
 }
 .container {
+  width: 1905px;
   background-color: #e5e5e5;
+  height: 1080px;
+}
+.titlePos {
+  width: 100%;
+  height: 50px;
+}
+.clientCircle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 80.1px;
+  top: 80px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.clientName {
+  position: absolute;
+  width: 121px;
+  height: 21px;
+  left: 150.1px;
+  top: 94.5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
 }

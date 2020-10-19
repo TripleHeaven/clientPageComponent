@@ -7,6 +7,9 @@
   display: inline-block;
 }
 .container {
+  top: 297px;
+  left: 30px;
+  position: absolute;
   width: 530px;
   height: 136px;
   border-radius: 8px;

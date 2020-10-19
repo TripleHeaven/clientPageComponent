@@ -4,7 +4,8 @@
     "start": "parcel src/index.html",
     "start_log": "parcel src/index.html --log-level 4",
     "test": "jest --verbose",
-    "test:watch": "jest --watch --verbose"
+    "test:watch": "jest --watch --verbose",
+    "pretty": "prettier --write \"./{src,types,scripts}/**/*.{js,jsx,json,ts,tsx,scss}\""
   },
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",

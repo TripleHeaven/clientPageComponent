@@ -1,3 +1,3 @@
-import BasicInformation from "./BasicInformation";
+import BasicInformation from './BasicInformation';
 
 export default BasicInformation;

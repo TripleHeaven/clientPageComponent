@@ -1,3 +1,3 @@
-import Abo from "./Abo";
+import Abo from './Abo';
 
 export default Abo;
