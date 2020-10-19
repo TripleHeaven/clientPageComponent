@@ -1,3 +1,3 @@
 export interface VisitT {
-  date : string;
+  date : Date;
 }

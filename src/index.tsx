@@ -11,6 +11,7 @@ import { VisitT } from "./TypesTS/VisitT";
 import { AboT } from "./TypesTS/AboT";
 import { NoteT } from "./TypesTS/NoteT";
 import { Context } from "./context";
+import VisitsCalendar from "./VisitsCalendar/VisitsCalendar";
 // here we disable console and performance for better production experience
 // console.log(process.env.NODE_ENV);
 // if (!process || !process.env || process.env.NODE_ENV !== "development") {
@@ -100,9 +101,9 @@ export default function App() {
   };
   const testVisits: VisitT[] = [
     {
-      date: "17 Aug 2020",
+      date: new Date(2020, 0, 4),
     },
-    { date: "22 Aug 2020" },
+    { date: new Date(2020, 0, 7) },
   ];
   const testAbo: AboT = {
     active: "DayTime",
@@ -125,6 +126,7 @@ export default function App() {
         <Visits visits={testVisits}></Visits>
         <Abo abo={testAbo}></Abo>
         <Notes notes={testNotes}></Notes>
+        <VisitsCalendar visits={testVisits}></VisitsCalendar>
       </div>
     </Context.Provider>
   );

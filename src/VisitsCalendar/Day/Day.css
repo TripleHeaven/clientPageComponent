@@ -1,0 +1,16 @@
+.dayitself {
+  width: 25.8px;
+  justify-content: center;
+}
+.regular {
+  width: 25.8px;
+  justify-content: center;
+}
+.none {
+  width: 25.8px;
+  content: none;
+}
+.special {
+  color: #0047ff;
+  width: 25.8px;
+}

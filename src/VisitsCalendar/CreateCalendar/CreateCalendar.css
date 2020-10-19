@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+.calendarContainer {
+  /* display: flex; */
+  width: 200px;
+  height: 120px;
+  padding-left: 26px;
+  margin-top: -2px;
+}
+.calendarDays {
+  width: 161px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  font-size: 12px;
+  margin-top: -5px;
+}
+.daysItself {
+  display: flex;
+  width: 161px;
+  height: 40px;
+  flex-wrap: wrap;
+}
+.calDays {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: flex;
+  width: 190px;
+  height: 80px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+}
+.month {
+  font-size: 12px;
+}

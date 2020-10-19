@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+}
+.container {
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  width: 708px;
+  height: 197px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  height: 50px;
+  font-weight: 500;
+  display: flex;
+}
+.mainTitle {
+  display: inline-block;
+  padding-left: 22px;
+  padding-top: 3px;
+}
+.threeDots {
+  display: inline-block;
+  width: 15px;
+  padding-left: 230px;
+  padding-top: 23px;
+}
+.titleButtons {
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 16px;
+  color: #0047ff;
+  font-size: 12px;
+}
+.titleButtons p {
+  display: inline-block;
+}
+.titleButton {
+  display: inline-block;
+  padding-left: 35px;
+}
+.titleButtonS {
+  display: inline-block;
+  padding-left: 0px;
+}
+.titleButtonN {
+  display: inline-block;
+  padding-left: 27px;
+}
+
+.tdContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.infoLevel {
+  display: flex;
+  justify-content: space-between;
+}
+.clientInfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.infoLeft {
+  padding-left: 12px;
+}
+.infoRight {
+  padding-right: 21px;
+}
+.categoryName {
+  display: inline-block;
+  width: 110px;
+  font-weight: 500;
+}
+.categoryName text {
+  padding-left: 10px;
+}
+.param {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  width: 120px;
+}
+.space {
+  height: 10px;
+}
+.showButton {
+  padding-left: 22px;
+  padding-top: 4px;
+  color: #0047ff;
+}
+.categoryName p {
+  display: inline;
+}
+.calendarContainer {
+  display: flex;
+}
