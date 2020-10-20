@@ -27,7 +27,7 @@ export default function Visits({ visits }: { visits: VisitT[] }) {
             <div className={styles.categoryName}>
               <p>Total visits</p>
             </div>
-            <div className={styles.param}>153</div>
+            <div className={styles.param}>{visits.length}</div>
           </div>
         </div>
         <div className={styles.space}></div>

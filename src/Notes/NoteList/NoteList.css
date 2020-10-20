@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@370,400;450;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@370,400;450;500&display=swap');
 .dot {
   height: 4px;
   width: 4px;
@@ -7,12 +7,13 @@
   display: inline-block;
 }
 .addNewNoteButton {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   padding-top: 2px;
   padding-left: 24px;
   color: #0047ff;
+  cursor: pointer;
 }
 .container {
   width: 530px;
@@ -21,7 +22,7 @@
   background-color: #ffffff;
 }
 .title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   height: 46px;
 }
@@ -35,6 +36,7 @@
   display: inline-block;
   width: 15px;
   padding-left: 441px;
+  cursor: pointer;
 }
 .tdContainer {
   display: flex;
@@ -46,7 +48,7 @@
 }
 
 .clientInfo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
 .infoLeft {
@@ -74,7 +76,7 @@
 }
 .noteInfo {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   display: flex;
   padding-left: 21px;
@@ -106,7 +108,7 @@
 .noteEdit {
   display: flex;
   padding-left: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -114,7 +116,7 @@
 .noteTextOpen {
   display: flex;
   padding-left: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -140,7 +142,7 @@
 .noteEditOpen {
   display: block;
   padding-left: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
@@ -155,4 +157,5 @@ li {
 .buttonsE {
   float: right;
   padding-right: 19px;
+  cursor: pointer;
 }

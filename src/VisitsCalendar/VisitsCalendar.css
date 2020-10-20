@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 .dot {
   height: 4px;
   width: 4px;
@@ -16,7 +16,7 @@
   background-color: #ffffff;
 }
 .title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   height: 50px;
   font-weight: 500;
@@ -46,14 +46,17 @@
 .titleButton {
   display: inline-block;
   padding-left: 35px;
+  cursor: pointer;
 }
 .titleButtonS {
   display: inline-block;
   padding-left: 0px;
+  cursor: pointer;
 }
 .titleButtonN {
   display: inline-block;
   padding-left: 27px;
+  cursor: pointer;
 }
 
 .tdContainer {
@@ -65,7 +68,7 @@
   justify-content: space-between;
 }
 .clientInfo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
 .infoLeft {
