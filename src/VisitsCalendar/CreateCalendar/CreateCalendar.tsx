@@ -76,7 +76,8 @@ export default function CreateCalendar({
   return (
     <div className={styles.calendarContainer}>
       <div className={styles.month}>
-        {numToMonthA[mon]} {sDays} Visits
+        <span className={styles.boldM}>{numToMonthA[mon]}&nbsp;</span> {sDays}{' '}
+        Visits
       </div>
       <div className={styles.calendarDays}>
         <p>m</p>

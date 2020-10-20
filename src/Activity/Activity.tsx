@@ -43,7 +43,9 @@ export default function Activity() {
       <div className={styles.activityContainer}>
         <div className={styles.activity}>
           <div className={styles.type}>
-            <FontAwesomeIcon icon={faClock} color="grey" />
+            <span className={styles.iconC}>
+              <FontAwesomeIcon icon={faClock} color="grey" />
+            </span>
             Visit
           </div>
           <div className={styles.date}>15 Aug 2020</div>
@@ -52,7 +54,9 @@ export default function Activity() {
         </div>
         <div className={styles.activity}>
           <div className={styles.type}>
-            <FontAwesomeIcon icon={faClock} color="grey" />
+            <span className={styles.iconC}>
+              <FontAwesomeIcon icon={faClock} color="grey" />
+            </span>
             Visit
           </div>
           <div className={styles.date}>15 Aug 2020</div>
@@ -61,7 +65,9 @@ export default function Activity() {
         </div>
         <div className={styles.activity}>
           <div className={styles.type}>
-            <FontAwesomeIcon icon={faClock} color="grey" />
+            <span className={styles.iconC}>
+              <FontAwesomeIcon icon={faClock} color="grey" />
+            </span>
             Visit
           </div>
           <div className={styles.date}>15 Aug 2020</div>

@@ -25,11 +25,14 @@ export default function BasicInformation({ client }: { client: ClientT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <FontAwesomeIcon
-                icon={faPhone}
-                color="#0047FF"
-                flip="horizontal"
-              />
+              <div className={styles.iconF}>
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  color="#0047FF"
+                  flip="horizontal"
+                  size="sm"
+                />
+              </div>
               <p>Phone</p>
             </div>
             <div className={styles.param}>{client.phone}</div>
@@ -46,14 +49,18 @@ export default function BasicInformation({ client }: { client: ClientT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <FontAwesomeIcon icon={faAt} color="#0047FF"></FontAwesomeIcon>
+              <div className={styles.iconAt}>
+                <FontAwesomeIcon icon={faAt} color="#0047FF"></FontAwesomeIcon>
+              </div>
               <p>Email</p>
             </div>
             <div className={styles.param}>{client.email}</div>
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <FontAwesomeIcon icon={faCalendar} color="#0047FF" />
+              <div className={styles.iconAge}>
+                <FontAwesomeIcon icon={faCalendar} color="#0047FF" />
+              </div>
               <p>Age</p>
             </div>
             <div className={styles.param}>{client.age}</div>
@@ -63,11 +70,13 @@ export default function BasicInformation({ client }: { client: ClientT }) {
         <div className={styles.infoLevel}>
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
-              <FontAwesomeIcon
-                icon={faMapMarkerAlt}
-                color="#0047FF"
-                flip="horizontal"
-              />
+              <div className={styles.iconMarker}>
+                <FontAwesomeIcon
+                  icon={faMapMarkerAlt}
+                  color="#0047FF"
+                  flip="horizontal"
+                />
+              </div>
               <p>Adress</p>
             </div>
             <div className={styles.param}>{client.adress}</div>

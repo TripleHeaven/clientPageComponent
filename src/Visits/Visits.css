@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 .dot {
   height: 4px;
   width: 4px;
@@ -16,7 +16,7 @@
   background-color: #ffffff;
 }
 .title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   height: 50px;
   font-weight: 500;
@@ -24,30 +24,43 @@
 .mainTitle {
   display: inline-block;
   padding-left: 22px;
-  padding-top: 3px;
+  padding-top: 6px;
 }
 .threeDots {
   display: inline-block;
-  width: 15px;
+  width: 16.8px;
   padding-left: 431px;
 }
 .tdContainer {
   display: flex;
   justify-content: space-between;
+  height: 10px;
+  padding-bottom: 5px;
 }
 .infoLevel {
   display: flex;
   justify-content: space-between;
+  height: 15px;
 }
 .clientInfo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
 .infoLeft {
   padding-left: 12px;
 }
+.infoLeft p {
+  padding-left: 11px;
+  padding-top: 5px;
+  font-size: 12.5px;
+}
 .infoRight {
-  padding-right: 21px;
+  padding-right: 11px;
+}
+.infoRight p {
+  padding-right: 0;
+  padding-top: 0px;
+  font-size: 12.9px;
 }
 .categoryName {
   display: inline-block;
@@ -70,6 +83,7 @@
   padding-left: 22px;
   padding-top: 4px;
   color: #0047ff;
+  font-size: 13px;
 }
 .categoryName p {
   display: inline;

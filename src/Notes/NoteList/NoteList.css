@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 .container {
-  width: 530px;
+  width: 527px;
   height: 224px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -28,14 +28,14 @@
 }
 .mainTitle {
   display: inline-block;
-  padding-left: 24px;
+  padding-left: 23px;
   padding-top: 3px;
   font-weight: 500;
 }
 .threeDots {
   display: inline-block;
-  width: 15px;
-  padding-left: 441px;
+  width: 17px;
+  padding-left: 440px;
   cursor: pointer;
 }
 .tdContainer {

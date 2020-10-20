@@ -15,7 +15,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 80.1px;
+  left: 30.1px;
   top: 80px;
   background-color: gray;
   border-radius: 50%;
@@ -24,8 +24,8 @@ body {
   position: absolute;
   width: 121px;
   height: 21px;
-  left: 150.1px;
-  top: 94.5px;
+  left: 105.1px;
+  top: 95.5px;
 
   font-family: Roboto;
   font-style: normal;

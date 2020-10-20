@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 .dot {
   height: 4px;
   width: 4px;
@@ -16,19 +16,19 @@
   background-color: #ffffff;
 }
 .title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   height: 46px;
 }
 .mainTitle {
   display: inline-block;
-  padding-left: 22px;
-  padding-top: 3px;
+  padding-left: 20px;
+  padding-top: 1px;
   font-weight: 500;
 }
 .threeDots {
   display: inline-block;
-  width: 15px;
+  width: 17px;
   padding-left: 441px;
 }
 .tdContainer {
@@ -40,14 +40,20 @@
   justify-content: space-between;
 }
 .clientInfo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
 .infoLeft {
   padding-left: 11px;
 }
 .infoRight {
-  padding-right: 32px;
+  padding-right: 44px;
+}
+.infoLeft p {
+  font-size: 13px;
+}
+.infoRight p {
+  font-size: 13px;
 }
 .categoryName {
   display: inline-block;
@@ -63,7 +69,7 @@
   display: inline-block;
   font-weight: 400;
   font-size: 12px;
-  width: 120px;
+  width: 110px;
 }
 .space {
   height: 10px;

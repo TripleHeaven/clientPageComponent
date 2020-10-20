@@ -21,16 +21,20 @@ export default function VisitsCalendar({ visits }: { visits: VisitT[] }) {
         <div className={styles.titleButtons}>
           <p className={styles.titleButtonS}>Show Months</p>
           <div className={styles.titleButton} onClick={() => changeMonth(-1)}>
-            <FontAwesomeIcon icon={faArrowLeft} color="#0047FF" />
+            <div className={styles.arrowI}>
+              <FontAwesomeIcon icon={faArrowLeft} color="#0047FF" />
+            </div>
             <p>Previouts period</p>
           </div>
           <div className={styles.titleButtonN} onClick={() => changeMonth(1)}>
             <p>Next period</p>
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              flip="horizontal"
-              color="#0047FF"
-            ></FontAwesomeIcon>
+            <div className={styles.arrowN}>
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                flip="horizontal"
+                color="#0047FF"
+              ></FontAwesomeIcon>
+            </div>
           </div>
         </div>
         <div className={styles.threeDots}>

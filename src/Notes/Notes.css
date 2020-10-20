@@ -10,15 +10,15 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
-  padding-top: 2px;
-  padding-left: 24px;
+  padding-top: 1.5px;
+  padding-left: 22px;
   color: #0047ff;
 }
 .container {
   position: absolute;
   top: 599px;
   left: 33px;
-  width: 530px;
+  width: 527px;
   height: 224px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -30,8 +30,8 @@
 }
 .mainTitle {
   display: inline-block;
-  padding-left: 24px;
-  padding-top: 3px;
+  padding-left: 23px;
+  padding-top: 2px;
   font-weight: 500;
 }
 .threeDots {
@@ -113,9 +113,8 @@
   padding-top: 15px;
 }
 .notesContainer {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 150px;
+  overflow: hidden;
+  height: 135px;
 }
 .tbForCreate {
   width: 470px;
