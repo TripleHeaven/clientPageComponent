@@ -40,26 +40,19 @@ export default function CreateCalendar({
     }
     return false;
   }
-  // =================================================================================================================
   function getDay(date: Date) {
-    // получить номер дня недели, от 0 (пн) до 6 (вс)
     let day = date.getDay();
-
     if (day === 0) {
       day = 7;
-    } // сделать воскресенье (0) последним днем
+    }
     return day - 1;
   }
-  const mon = monthNumber; // месяцы в JS идут от 0 до 11, а не от 1 до 12
+  const mon = monthNumber;
   const d = new Date(2020, monthNumber, 1);
-  // пробелы для первого ряда
-  // с понедельника до первого дня месяца
-  // * * * 1  2  3  4
   const thisMonthDays: Array<DayT> = [];
   for (let i = 0; i < getDay(d); i++) {
     thisMonthDays.push({ dayNum: '', stateThing: 'none' });
   }
-  // <td> ячейки календаря с датами
   while (d.getMonth() === mon) {
     if (isSpecialDay(d, visitDates) === true) {
       sDays += 1;
@@ -75,15 +68,11 @@ export default function CreateCalendar({
     }
     d.setDate(d.getDate() + 1);
   }
-  // добить таблицу пустыми ячейками, если нужно
-  // 29 30 31 * * * *
   if (getDay(d) !== 0) {
     for (let i = getDay(d); i < 7; i++) {
       thisMonthDays.push({ dayNum: '', stateThing: 'none' });
     }
   }
-
-  // =================================================================================================================
   return (
     <div className={styles.calendarContainer}>
       <div className={styles.month}>
