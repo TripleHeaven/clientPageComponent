@@ -1,1 +1,2 @@
-# react-hooks-parcel-typescript-sass-starter
+# Client Page Component
+# Run with yarn start
