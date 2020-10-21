@@ -13,6 +13,9 @@ import { NoteT } from './TypesTS/NoteT';
 import { Context } from './context';
 import VisitsCalendar from './VisitsCalendar/VisitsCalendar';
 import Activity from './Activity/Activity';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 // here we disable console and performance for better production experience
 // console.log(process.env.NODE_ENV);
 // if (!process || !process.env || process.env.NODE_ENV !== "development") {
@@ -123,6 +126,39 @@ export default function App() {
       }}
     >
       <div className={styles.container}>
+        <div className={styles.button1Pos}>
+          <span className={styles.phoneT}>
+            <FontAwesomeIcon
+              icon={faPhone}
+              color="#FFFFFF"
+              flip="horizontal"
+              size="xs"
+            ></FontAwesomeIcon>
+          </span>
+          <span className={styles.phoneTC}>Call</span>
+        </div>
+        <div className={styles.button2Pos}>
+          <span className={styles.phoneTP}>
+            <FontAwesomeIcon
+              icon={faDownload}
+              color="#5E5E5E"
+              flip="horizontal"
+              size="xs"
+            ></FontAwesomeIcon>
+          </span>
+          <span className={styles.phoneTCP}>Call</span>
+        </div>
+        <div className={styles.button3Pos}>
+          <span className={styles.phoneTCPF}>
+            <div className={styles.threeDots}>
+              <div className={styles.tdContainer}>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+                <div className={styles.dot}></div>
+              </div>
+            </div>
+          </span>
+        </div>
         <div className={styles.titlePos}>
           <div className={styles.clientCircle}></div>
           <div className={styles.clientName}>Maria Johnson</div>

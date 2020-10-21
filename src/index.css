@@ -33,3 +33,73 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+.button1Pos {
+  position: absolute;
+  top: 91px;
+  left: 898px;
+  width: 150px;
+  height: 30px;
+  background-color: #0047ff;
+  border-radius: 5px;
+}
+.button2Pos {
+  position: absolute;
+  top: 91px;
+  left: 1060px;
+  width: 150px;
+  height: 30px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.button3Pos {
+  position: absolute;
+  top: 91px;
+  left: 1220px;
+  width: 66px;
+  height: 30px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.phoneTP {
+  line-height: 28px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.phoneTCP {
+  font-size: 13px;
+  color: #5e5e5e;
+  padding-left: 38px;
+}
+
+.phoneT {
+  line-height: 28px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.phoneTC {
+  font-size: 13px;
+  color: white;
+  padding-left: 38px;
+}
+.phoneTCPF {
+}
+.threeDots {
+  display: inline-block;
+  width: 17px;
+  padding-left: 24px;
+  padding-top: 10px;
+}
+.tdContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+}

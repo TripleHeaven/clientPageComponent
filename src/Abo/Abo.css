@@ -73,10 +73,9 @@
 }
 .paramB {
   display: inline-block;
-  font-weight: 400;
-  font-size: 13.2px;
+  font-weight: 500;
+  font-size: 12px;
   width: 110px;
-  font-weight: 600;
 }
 .space {
   height: 10px;

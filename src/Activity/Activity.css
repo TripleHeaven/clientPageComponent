@@ -36,7 +36,7 @@
   width: 400px;
   font-size: 13px;
   padding-top: 0.7px;
-  padding-left: 30px;
+  padding-left: 22px;
   transition: 4s;
   flex-wrap: wrap;
   height: 20px;
@@ -172,7 +172,7 @@
 }
 .activityContainer {
   display: flex;
-  width: 680px;
+  width: 100%;
   flex-wrap: wrap;
 }
 .activity {
@@ -182,8 +182,9 @@
   line-height: 35px;
   background-color: rgba(0, 0, 0, 0.03);
   font-size: 13.5px;
-  margin-left: 28px;
+  margin-left: auto;
   margin-top: 8px;
+  margin-right: auto;
 }
 .type {
   width: 86px;
