@@ -146,7 +146,7 @@ export default function App() {
               size="xs"
             ></FontAwesomeIcon>
           </span>
-          <span className={styles.phoneTCP}>Call</span>
+          <span className={styles.phoneTCP}>Download pdf</span>
         </div>
         <div className={styles.button3Pos}>
           <span className={styles.phoneTCPF}>

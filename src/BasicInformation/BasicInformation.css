@@ -87,6 +87,9 @@
   font-size: 12.85px;
   width: 120px;
 }
+.param:hover {
+  font-weight: 600;
+}
 .space {
   height: 10px;
 }

@@ -41,7 +41,9 @@
   flex-wrap: wrap;
   height: 20px;
 }
-
+.param:hover {
+  font-weight: 600;
+}
 /* .panelContainer :nth-child(2):hover ~ .line .curLine {
   width: 1000px;
 } */

@@ -22,6 +22,18 @@
   font-weight: 500;
   display: flex;
 }
+.titleButtonS:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+.titleButtonN:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+.titleButton:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
 .mainTitle {
   display: inline-block;
   padding-left: 22px;

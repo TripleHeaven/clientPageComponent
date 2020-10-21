@@ -80,3 +80,9 @@
 .space {
   height: 10px;
 }
+.param:hover {
+  font-weight: 600;
+}
+.paramB:hover {
+  font-weight: 600;
+}

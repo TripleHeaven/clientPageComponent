@@ -46,6 +46,9 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
+.param:hover {
+  font-weight: 600;
+}
 .infoLeft {
   padding-left: 12px;
 }

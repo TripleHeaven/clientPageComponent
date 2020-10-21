@@ -12,6 +12,18 @@ body {
   height: 14px;
   width: 25.7px;
 }
+.regular:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+.none:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+.special:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
 .none {
   justify-content: center;
   text-align: center;
