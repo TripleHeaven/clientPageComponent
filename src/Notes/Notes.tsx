@@ -3,6 +3,8 @@ import styles from './Notes.css';
 import { NoteT } from '../TypesTS/NoteT';
 import NoteList from './NoteList/NoteList';
 import { Context } from '../context';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 export default function Notes({ notes }: { notes: NoteT[] }) {
   const { addNote } = useContext(Context);
   const [newNoteText, setText] = useState('');
@@ -28,13 +30,19 @@ export default function Notes({ notes }: { notes: NoteT[] }) {
     <div className={styles.container}>
       <div className={styles.title}>
         <p className={styles.mainTitle}>Notes</p>
+        <span className={styles.iconPlus}>
+          <FontAwesomeIcon
+            icon={faPlus}
+            color="rgba(0, 0, 0, 0.4)"
+          ></FontAwesomeIcon>
+        </span>
       </div>
-      <div
+      {/* <div
         className={styles.addNewNoteButton}
         onClick={() => toggleVisibility()}
       >
         +Add new note
-      </div>
+      </div> */}
 
       <div className={styles.notesContainer}>
         <div className={isvisible.menu}>

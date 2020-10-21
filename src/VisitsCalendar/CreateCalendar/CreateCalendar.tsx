@@ -4,9 +4,11 @@ import { VisitT } from '../../TypesTS/VisitT';
 import { DayT } from '../../TypesTS/DayT';
 import Day from '../Day/Day';
 export default function CreateCalendar({
+  yearNumber,
   monthNumber,
   visits
 }: {
+  yearNumber: number;
   monthNumber: number;
   visits: VisitT[];
 }) {
@@ -47,12 +49,35 @@ export default function CreateCalendar({
     }
     return day - 1;
   }
+  function quantityDaysInMonth(month: number, year: number) {
+    return new Date(year, month, 0).getDate();
+  }
   const mon = monthNumber;
-  const d = new Date(2020, monthNumber, 1);
+
+  const d = new Date(yearNumber, monthNumber, 1);
   const thisMonthDays: Array<DayT> = [];
   for (let i = 0; i < getDay(d); i++) {
-    thisMonthDays.push({ dayNum: '', stateThing: 'none' });
+    if (monthNumber === 0) {
+      thisMonthDays.push({
+        dayNum: (
+          quantityDaysInMonth(12, yearNumber - 1) -
+          (getDay(d) - i) +
+          1
+        ).toString(),
+        stateThing: 'none'
+      });
+    } else {
+      thisMonthDays.push({
+        dayNum: (
+          quantityDaysInMonth(monthNumber - 1, yearNumber) -
+          (getDay(d) - i) +
+          1
+        ).toString(),
+        stateThing: 'none'
+      });
+    }
   }
+
   while (d.getMonth() === mon) {
     if (isSpecialDay(d, visitDates) === true) {
       sDays += 1;
@@ -68,9 +93,14 @@ export default function CreateCalendar({
     }
     d.setDate(d.getDate() + 1);
   }
+  let dayNext = 1;
   if (getDay(d) !== 0) {
     for (let i = getDay(d); i < 7; i++) {
-      thisMonthDays.push({ dayNum: '', stateThing: 'none' });
+      thisMonthDays.push({
+        dayNum: dayNext.toString(),
+        stateThing: 'none'
+      });
+      dayNext += 1;
     }
   }
   return (

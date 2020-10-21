@@ -66,12 +66,14 @@ export default function NoteList(note: NoteT) {
   return (
     <div>
       <div className={styles.noteInfo}>
-        <div className={styles.noteDate}>{getDateFromDate(note.date)}</div>
-        <div className={styles.noteAuthor}>{note.redactor}</div>
+        <div className={styles.noteDate}>{note.redactor} -</div>
+        <div className={styles.noteAuthor}>{getDateFromDate(note.date)}</div>
       </div>
       <div className={isvisibleNote.noteDoneStyle}>
         <p>{note.noteText}</p>
-        <div className={styles.threeDots} onClick={() => toggleVisibility()}>
+        <div
+          className={styles.threeDots} /*onClick={() => toggleVisibility()}*/
+        >
           <div className={styles.tdContainer}>
             <div className={styles.dot}></div>
             <div className={styles.dot}></div>
@@ -101,6 +103,7 @@ export default function NoteList(note: NoteT) {
         </div>
       </div>
       <div className={styles.noteEdit}></div>
+      <div className={styles.space}></div>
     </div>
   );
 }

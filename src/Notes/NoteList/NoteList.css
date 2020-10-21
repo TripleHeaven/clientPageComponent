@@ -35,7 +35,9 @@
 .threeDots {
   display: inline-block;
   width: 17px;
-  padding-left: 440px;
+  padding-left: 442px;
+  height: 15px;
+  margin-top: -21px;
   cursor: pointer;
 }
 .tdContainer {
@@ -77,10 +79,10 @@
 .noteInfo {
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 12.4px;
   display: flex;
-  padding-left: 21px;
-  padding-top: 16px;
+  padding-left: 18px;
+  padding-top: 4px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -88,7 +90,7 @@
   display: inline-block;
 }
 .noteAuthor {
-  padding-left: 10px;
+  padding-left: 3px;
   display: inline-block;
 }
 .noteItself {
@@ -115,16 +117,20 @@
 
 .noteTextOpen {
   display: flex;
-  padding-left: 21px;
+  padding-left: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
 }
 .noteTextOpen p {
   line-height: 16px;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 6px;
   flex-basis: 90%;
+}
+.space {
+  height: 9px;
+  width: 1px;
 }
 .noteTextOpen .threeDots {
   padding-left: 8px;

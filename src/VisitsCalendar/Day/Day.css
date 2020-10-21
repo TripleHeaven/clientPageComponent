@@ -1,24 +1,34 @@
-.dayitself {
-  width: 25px;
+html,
+body {
+  margin: 0;
+}
+
+.regular {
   justify-content: center;
   text-align: center;
-  height: 15px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 0;
+  margin-bottom: 2.5px;
+  height: 14px;
+  width: 25.7px;
 }
-.regular {
-  width: 25px;
+.none {
   justify-content: center;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
-}
-.none {
-  width: 25px;
-  content: none;
-  height: 15px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  height: 14px;
+  width: 25.7px;
 }
 .special {
   color: #0047ff;
-  width: 25px;
+
   text-align: center;
   justify-content: center;
-  height: 15px;
+
+  margin-top: 0;
+  margin-bottom: 5px;
+  height: 14px;
+  width: 25.7px;
 }

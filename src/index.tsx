@@ -39,21 +39,21 @@ export default function App() {
       redactor: 'Strffan Janoski',
       date: new Date(2020, 3, 15, 2, 3),
       noteText:
-        'fkjaskldfjldskfjlksdfjlasdkfjdl fdsjakfjdlsakfjlfjaslkdjflk;sdaj lkjfdaslkfjdslak;fjdsalkfjksdlk;a lkdasfjl;dksafjld;ksa jldkfasjfl;kdsajfl;kdsajfl;ksd'
+        'Steven Paul Jobs was an American business magnate, industrial designer, investor, and media properietor. He was the chairman, chief executive officer (CEO)'
     },
     {
       noteId: Date.now() + 15,
       redactor: 'Lev Balaguroff',
       date: new Date(2019, 3, 15, 2, 3),
       noteText:
-        'fkjaskldffjafkdjsflkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk'
+        'Steven Paul Jobs was an American business magnate, industrial designer, investor, and media properietor. He was the chairman, chief executive officer (CEO)'
     },
     {
       noteId: Date.now() + 16,
       redactor: 'Lev Buroff',
       date: new Date(2019, 5, 15, 2, 3),
       noteText:
-        'fkjaskldffjafkdjsflfksajflkdj sl;fsadjfklsdfj l;kdjasfl;kdjflfkdsafjd;laskfjd;lsk j;ldasfkkdsajflk dsklafjlsadk;jjldskfjlksdfjlasdkfjdl ffhaskdjfkjs jfsakdfjlksaf jldks;f jld;skaf jldkjsa fdjsakfjl;dksafjlk;dsajflkj ldksafjl;sdakfjlds;kjlfkajsd;flkjs ldask;fjdls;kafjdsla;jfl jldkasfjl;sdkfjlsk'
+        'Steven Paul Jobs was an American business magnate, industrial designer, investor, and media properietor. He was the chairman, chief executive officer (CEO)'
     }
   ]);
 

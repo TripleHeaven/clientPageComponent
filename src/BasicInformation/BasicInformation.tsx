@@ -28,7 +28,7 @@ export default function BasicInformation({ client }: { client: ClientT }) {
               <div className={styles.iconF}>
                 <FontAwesomeIcon
                   icon={faPhone}
-                  color="#0047FF"
+                  color="rgba(0, 0, 0, 0.4)"
                   flip="horizontal"
                   size="sm"
                 />
@@ -39,7 +39,7 @@ export default function BasicInformation({ client }: { client: ClientT }) {
           </div>
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
-              <FontAwesomeIcon icon={faVenusMars} color="#0047FF" />
+              <FontAwesomeIcon icon={faVenusMars} color="rgba(0, 0, 0, 0.4)" />
               <p>Gender</p>
             </div>
             <div className={styles.param}>{client.gender}</div>
@@ -50,7 +50,10 @@ export default function BasicInformation({ client }: { client: ClientT }) {
           <div className={styles.infoLeft}>
             <div className={styles.categoryName}>
               <div className={styles.iconAt}>
-                <FontAwesomeIcon icon={faAt} color="#0047FF"></FontAwesomeIcon>
+                <FontAwesomeIcon
+                  icon={faAt}
+                  color="rgba(0, 0, 0, 0.4)"
+                ></FontAwesomeIcon>
               </div>
               <p>Email</p>
             </div>
@@ -59,7 +62,7 @@ export default function BasicInformation({ client }: { client: ClientT }) {
           <div className={styles.infoRight}>
             <div className={styles.categoryName}>
               <div className={styles.iconAge}>
-                <FontAwesomeIcon icon={faCalendar} color="#0047FF" />
+                <FontAwesomeIcon icon={faCalendar} color="rgba(0, 0, 0, 0.4)" />
               </div>
               <p>Age</p>
             </div>
@@ -73,7 +76,7 @@ export default function BasicInformation({ client }: { client: ClientT }) {
               <div className={styles.iconMarker}>
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
-                  color="#0047FF"
+                  color="rgba(0, 0, 0, 0.4)"
                   flip="horizontal"
                 />
               </div>

@@ -2,24 +2,30 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+html,
+body {
+  margin: 0;
+}
 .calendarContainer {
   width: 200px;
-  height: 120px;
+  height: 150px;
   padding-left: 26px;
   margin-right: -6px;
   margin-top: -2px;
 }
 .calendarDays {
-  width: 161px;
+  width: 167px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 20px;
   font-size: 12px;
   margin-top: -11px;
+  margin-left: -4px;
 }
+
 .calendarDays p {
-  width: 14px;
+  width: 11px;
   text-align: center;
   justify-content: center;
 }
@@ -33,12 +39,15 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   display: flex;
-  width: 175px;
-  height: 92px;
+  width: 183px;
+  /* height: 100px; */
   flex-wrap: wrap;
-  padding-top: 12px;
-  margin-left: -9px;
+
+  justify-content: flex-start;
+  padding-top: 13px;
+  margin-left: -10px;
 }
+
 .month {
   font-size: 12px;
   margin-top: -2px;

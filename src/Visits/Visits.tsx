@@ -45,10 +45,6 @@ export default function Visits({ visits }: { visits: VisitT[] }) {
             <div className={styles.param}>15 Sep 2018</div>
           </div>
         </div>
-
-        <div className={styles.infoLevel}>
-          <p className={styles.showButton}>Show all visits</p>
-        </div>
       </div>
     </div>
   );

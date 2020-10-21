@@ -172,7 +172,7 @@
 }
 .activityContainer {
   display: flex;
-  width: 660px;
+  width: 680px;
   flex-wrap: wrap;
 }
 .activity {

@@ -59,6 +59,15 @@ export default function Abo({ abo }: { abo: AboT }) {
             <div className={styles.param}>{abo.activeTill}</div>
           </div>
         </div>
+        <div className={styles.space}></div>
+        <div className={styles.infoLevel}>
+          <div className={styles.infoLeft}>
+            <div className={styles.categoryName}>
+              <p>Next abo</p>
+            </div>
+            <div className={styles.paramB}>Daytime</div>
+          </div>
+        </div>
       </div>
     </div>
   );
