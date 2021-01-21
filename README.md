@@ -1,5 +1,13 @@
-# Client Page Component
+# Страница клиента на ReactJs
 
-# Run with yarn start
+## Компиляция 
+```
+yarn start
+```
 
-# React Hooks
+## Внешний вид
+
+![](mainpage.png "Main Page")
+
+### Возмжности
+  - Содержит множество компонентов, в том числе календарь
